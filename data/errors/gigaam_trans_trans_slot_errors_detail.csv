@@ -1,0 +1,204 @@
+﻿id,intent_gold,intent_pred,intent_ok,missing_spans,extra_spans,wrong_type_overlaps,n_missing,n_extra,n_wrong_type_overlap
+test_499,SearchScreeningEvent,RateBook,0,4:5:location,4:4:rating_value | 5:5:rating_unit,4:5:location~vs~4:4:rating_value | 4:5:location~vs~5:5:rating_unit,1,2,2
+test_305,SearchScreeningEvent,SearchCreativeWork,0,3:3:movie_name,3:3:object_name,3:3:movie_name~vs~3:3:object_name,1,1,1
+test_387,SearchScreeningEvent,SearchCreativeWork,0,3:8:movie_name,3:8:object_name,3:8:movie_name~vs~3:8:object_name,1,1,1
+test_435,SearchScreeningEvent,weather/find,0,2:2:movie_name,,,1,0,0
+test_274,BookRestaurant,BookRestaurant,1,3:3:restaurant_type | 5:7:party_size_description | 9:9:location | 11:12:datetime,2:2:restaurant_type | 6:6:party_size_description | 8:8:location | 10:11:datetime,,4,4,0
+test_264,BookRestaurant,BookRestaurant,1,5:5:location | 7:8:location | 10:10:party_size_number | 13:13:datetime,8:9:location | 11:11:party_size_number | 14:19:datetime,,4,3,0
+test_264_1,BookRestaurant,BookRestaurant,1,5:5:location | 7:8:location | 10:10:party_size_number | 13:13:datetime,8:9:location | 11:11:party_size_number | 14:19:datetime,,4,3,0
+test_495,BookRestaurant,BookRestaurant,1,3:4:restaurant_name | 8:8:location | 10:11:location,3:3:cuisine | 4:4:location | 7:8:location | 9:10:location,3:4:restaurant_name~vs~3:3:cuisine | 3:4:restaurant_name~vs~4:4:location,3,4,2
+test_458,BookRestaurant,BookRestaurant,1,3:3:restaurant_type | 4:4:location | 6:6:location,3:3:served_dish | 4:4:restaurant_type | 5:5:location | 7:7:location,3:3:restaurant_type~vs~3:3:served_dish | 4:4:location~vs~4:4:restaurant_type,3,4,2
+test_458_1,BookRestaurant,BookRestaurant,1,3:3:restaurant_type | 4:4:location | 6:6:location,3:3:served_dish | 4:4:restaurant_type | 5:5:location | 7:7:location,3:3:restaurant_type~vs~3:3:served_dish | 4:4:location~vs~4:4:restaurant_type,3,4,2
+test_413,BookRestaurant,BookRestaurant,1,3:3:datetime | 5:5:party_size_number | 8:8:location,3:9:datetime | 11:11:party_size_number | 14:14:location,5:5:party_size_number~vs~3:9:datetime | 8:8:location~vs~3:9:datetime,3,3,2
+test_485,AddToPlaylist,AddToPlaylist,1,1:2:entity_name | 4:4:reference | 6:6:playlist,1:3:artist | 5:5:reference | 6:7:playlist,1:2:entity_name~vs~1:3:artist,3,3,1
+test_495_1,BookRestaurant,BookRestaurant,1,3:3:restaurant_name | 7:7:location | 9:10:location,3:3:served_dish | 6:7:location | 8:9:location,3:3:restaurant_name~vs~3:3:served_dish,3,3,1
+test_488,AddToPlaylist,AddToPlaylist,1,2:3:playlist | 9:9:music_item | 10:11:artist,1:2:playlist | 6:6:music_item | 7:8:artist,,3,3,0
+test_424,PlayMusic,PlayMusic,1,2:2:sort | 4:4:artist | 6:7:service,3:3:sort | 5:5:artist | 7:7:service,,3,3,0
+test_424_1,PlayMusic,PlayMusic,1,2:2:sort | 4:5:artist | 7:8:service,3:3:sort | 5:6:artist | 8:8:service,,3,3,0
+test_424_2,PlayMusic,PlayMusic,1,2:2:sort | 4:4:artist | 6:7:service,3:3:sort | 5:5:artist | 7:7:service,,3,3,0
+test_466,AddToPlaylist,AddToPlaylist,1,1:1:music_item | 2:2:artist | 5:7:playlist,1:2:entity_name | 4:7:playlist,1:1:music_item~vs~1:2:entity_name | 2:2:artist~vs~1:2:entity_name,3,2,2
+test_391,SearchScreeningEvent,SearchScreeningEvent,1,2:5:movie_name | 7:7:object_location_type | 8:8:location,3:5:movie_name | 7:8:location,7:7:object_location_type~vs~7:8:location,3,2,1
+test_398,SearchScreeningEvent,SearchScreeningEvent,1,1:1:object_type | 2:2:object_location_type | 3:3:location,1:2:object_type | 4:4:location,2:2:object_location_type~vs~1:2:object_type,3,2,1
+test_273,weather/find,weather/find,1,2:2:location | 3:3:location | 5:5:datetime,2:3:location | 5:12:datetime,,3,2,0
+test_273_1,weather/find,weather/find,1,2:2:location | 3:3:location | 5:5:datetime,2:3:location | 5:12:datetime,,3,2,0
+test_500,BookRestaurant,BookRestaurant,1,3:4:location | 13:13:restaurant_type,4:4:party_size_description | 5:5:served_dish | 6:6:location | 12:13:served_dish,3:4:location~vs~4:4:party_size_description | 13:13:restaurant_type~vs~12:13:served_dish,2,4,2
+test_446,PlayMusic,PlayMusic,1,1:3:playlist | 5:6:service,1:1:sort | 3:3:datetime | 4:4:service,1:3:playlist~vs~1:1:sort | 1:3:playlist~vs~3:3:datetime,2,3,2
+test_393_1,BookRestaurant,BookRestaurant,1,4:5:location | 6:8:datetime,5:5:cuisine | 6:6:location | 7:9:datetime,4:5:location~vs~5:5:cuisine | 6:8:datetime~vs~6:6:location,2,3,2
+test_345_4,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:7:object_name,2:2:object_type | 3:3:object_type | 4:5:object_name,3:4:object_type~vs~4:5:object_name,2,3,1
+test_345_6,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:7:object_name,3:3:object_name | 4:4:object_type | 5:6:object_name,3:4:object_type~vs~3:3:object_name,2,3,1
+test_497,SearchCreativeWork,SearchCreativeWork,1,1:2:object_type | 3:5:object_name,1:1:object_type | 2:2:object_type | 3:4:object_name,,2,3,0
+test_444,SearchCreativeWork,SearchCreativeWork,1,1:2:object_type | 3:4:object_name,1:1:object_type | 2:2:object_type | 4:4:object_name,,2,3,0
+test_257,PlayMusic,PlayMusic,1,1:2:sort | 5:6:service,1:1:sort | 2:2:sort | 5:5:service,,2,3,0
+test_367,AddToPlaylist,AddToPlaylist,1,3:4:artist | 7:8:playlist,2:3:artist | 5:5:playlist | 6:7:playlist,,2,3,0
+test_417,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:7:object_name,2:2:object_type | 3:3:object_type | 5:5:object_name,,2,3,0
+test_417_1,SearchCreativeWork,SearchCreativeWork,1,2:3:object_type | 5:6:object_name,2:2:object_type | 3:3:object_type | 4:5:object_name,,2,3,0
+test_345_1,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:6:object_name,3:3:object_type | 4:4:object_type | 5:5:object_name,,2,3,0
+test_417_2,SearchCreativeWork,SearchCreativeWork,1,2:3:object_type | 5:5:object_name,2:2:object_type | 3:3:object_type | 4:4:object_name,,2,3,0
+test_417_3,SearchCreativeWork,SearchCreativeWork,1,2:3:object_type | 5:7:object_name,2:2:object_type | 3:3:object_type | 4:6:object_name,,2,3,0
+test_345_2,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:8:object_name,3:3:object_type | 4:4:object_type | 5:7:object_name,,2,3,0
+test_345_3,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:7:object_name,3:3:object_type | 4:4:object_type | 5:6:object_name,,2,3,0
+test_345_5,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:7:object_name,3:3:object_type | 4:4:object_type | 5:6:object_name,,2,3,0
+test_345_7,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:7:object_name,3:3:object_type | 4:4:object_type | 5:6:object_name,,2,3,0
+test_417_4,SearchCreativeWork,SearchCreativeWork,1,2:3:object_type | 5:7:object_name,2:2:object_type | 3:3:object_type | 5:6:object_name,,2,3,0
+test_498_1,BookRestaurant,BookRestaurant,1,8:11:location | 12:15:datetime,8:8:location | 9:11:location | 13:15:datetime,,2,3,0
+test_430,PlayMusic,PlayMusic,1,1:2:album | 4:4:artist,2:2:artist | 4:4:genre,1:2:album~vs~2:2:artist | 4:4:artist~vs~4:4:genre,2,2,2
+test_366_2,weather/find,weather/find,1,2:2:condition_temperature | 4:4:location,2:2:weather/attribute | 4:4:weather/attribute,2:2:condition_temperature~vs~2:2:weather/attribute | 4:4:location~vs~4:4:weather/attribute,2,2,2
+test_467,AddToPlaylist,AddToPlaylist,1,1:1:entity_name | 5:5:playlist,4:4:playlist | 5:5:reference,5:5:playlist~vs~5:5:reference,2,2,1
+test_464,RateBook,RateBook,1,4:4:best_rating | 5:9:object_name,3:3:best_rating | 4:8:object_name,4:4:best_rating~vs~4:8:object_name,2,2,1
+test_418,weather/find,weather/find,1,2:2:condition_temperature | 7:8:datetime,2:2:condition_description | 6:7:datetime,2:2:condition_temperature~vs~2:2:condition_description,2,2,1
+test_428,PlayMusic,PlayMusic,1,1:3:album | 5:5:artist,1:1:music_item | 4:4:genre,1:3:album~vs~1:1:music_item,2,2,1
+test_393,BookRestaurant,BookRestaurant,1,4:4:location | 5:7:datetime,5:5:served_dish | 6:8:datetime,5:7:datetime~vs~5:5:served_dish,2,2,1
+test_397,SearchCreativeWork,SearchCreativeWork,1,3:3:object_type | 4:5:object_name,2:2:object_type | 3:4:object_name,3:3:object_type~vs~3:4:object_name,2,2,1
+test_472_1,AddToPlaylist,AddToPlaylist,1,3:3:reference | 5:6:playlist,2:2:reference | 3:5:playlist,3:3:reference~vs~3:5:playlist,2,2,1
+test_442_3,weather/find,weather/find,1,4:4:location | 5:6:datetime,4:5:location | 6:7:datetime,5:6:datetime~vs~4:5:location,2,2,1
+test_366_5,weather/find,weather/find,1,4:4:location | 5:6:datetime,4:5:location | 6:7:datetime,5:6:datetime~vs~4:5:location,2,2,1
+test_393_2,BookRestaurant,BookRestaurant,1,4:5:location | 6:8:datetime,5:6:location | 7:9:datetime,6:8:datetime~vs~5:6:location,2,2,1
+test_393_3,BookRestaurant,BookRestaurant,1,4:5:location | 6:8:datetime,5:6:location | 7:9:datetime,6:8:datetime~vs~5:6:location,2,2,1
+test_393_4,BookRestaurant,BookRestaurant,1,4:5:location | 6:8:datetime,5:6:location | 7:9:datetime,6:8:datetime~vs~5:6:location,2,2,1
+test_393_5,BookRestaurant,BookRestaurant,1,4:5:location | 6:8:datetime,5:6:location | 7:9:datetime,6:8:datetime~vs~5:6:location,2,2,1
+test_393_6,BookRestaurant,BookRestaurant,1,4:5:location | 6:8:datetime,5:6:location | 7:9:datetime,6:8:datetime~vs~5:6:location,2,2,1
+test_452,PlayMusic,PlayMusic,1,3:4:artist | 6:6:datetime,4:5:artist | 7:7:datetime,,2,2,0
+test_448,SearchScreeningEvent,SearchScreeningEvent,1,3:5:movie_name | 7:7:object_location_type,2:4:movie_name | 6:6:object_location_type,,2,2,0
+test_315,BookRestaurant,BookRestaurant,1,6:6:location | 8:9:location,5:5:location | 6:7:location,,2,2,0
+test_385,SearchCreativeWork,SearchCreativeWork,1,3:3:object_type | 6:9:object_name,2:2:object_type | 5:8:object_name,,2,2,0
+test_386,weather/find,weather/find,1,2:2:condition_description | 7:7:datetime,1:1:condition_description | 7:10:datetime,,2,2,0
+test_321_3,weather/find,weather/find,1,4:4:datetime | 6:6:location,2:3:datetime | 5:5:location,,2,2,0
+test_454,weather/find,weather/find,1,2:2:condition_description | 4:4:location,2:2:weather/attribute,2:2:condition_description~vs~2:2:weather/attribute,2,1,1
+test_286,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:4:object_name,1:4:object_name,1:1:object_part_of_series_type~vs~1:4:object_name,2,1,1
+test_345,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type | 6:6:object_name,3:5:object_name,3:4:object_type~vs~3:5:object_name,2,1,1
+test_286_1,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:3:object_name,1:3:object_name,1:1:object_part_of_series_type~vs~1:3:object_name,2,1,1
+test_286_2,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:2:object_name,1:2:object_name,1:1:object_part_of_series_type~vs~1:2:object_name,2,1,1
+test_286_3,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:2:object_name,1:2:object_name,1:1:object_part_of_series_type~vs~1:2:object_name,2,1,1
+test_286_4,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:3:object_name,1:3:object_name,1:1:object_part_of_series_type~vs~1:3:object_name,2,1,1
+test_286_6,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:3:object_name,1:3:object_name,1:1:object_part_of_series_type~vs~1:3:object_name,2,1,1
+test_286_7,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:4:object_name,1:4:object_name,1:1:object_part_of_series_type~vs~1:4:object_name,2,1,1
+test_286_8,RateBook,RateBook,1,1:1:object_part_of_series_type | 2:2:object_name,1:2:object_name,1:1:object_part_of_series_type~vs~1:2:object_name,2,1,1
+test_479,weather/find,weather/find,1,3:3:location | 5:5:location,3:4:location,,2,1,0
+test_360,weather/find,weather/find,1,4:4:location | 5:5:location,4:5:location,,2,1,0
+test_363,weather/find,weather/find,1,3:4:location | 6:6:location,4:6:location,,2,1,0
+test_430_1,PlayMusic,PlayMusic,1,1:2:album | 4:5:artist,4:4:artist,,2,1,0
+test_191_4,weather/find,weather/find,1,0:1:weather/attribute | 3:4:location,1:1:weather/attribute,,2,1,0
+test_204_1,alarm/cancel_alarm,alarm/cancel_alarm,1,4:6:datetime | 7:7:datetime,4:8:datetime,,2,1,0
+test_408_2,weather/find,weather/find,1,4:4:location | 6:6:location,4:6:location,,2,1,0
+test_363_1,weather/find,weather/find,1,3:3:location | 5:5:location,3:4:location,,2,1,0
+test_363_2,weather/find,weather/find,1,3:3:location | 5:5:location,3:4:location,,2,1,0
+test_363_3,weather/find,weather/find,1,3:3:location | 5:5:location,3:4:location,,2,1,0
+test_366_6,weather/find,weather/find,1,5:5:datetime | 6:6:datetime,5:6:datetime,,2,1,0
+test_489,PlayMusic,PlayMusic,1,3:3:music_item | 5:5:artist,,,2,0,0
+test_285_29,BookRestaurant,BookRestaurant,1,8:13:served_dish,8:9:served_dish | 10:10:cuisine | 11:11:served_dish | 12:12:party_size_description | 13:13:served_dish,8:13:served_dish~vs~10:10:cuisine | 8:13:served_dish~vs~12:12:party_size_description,1,5,2
+test_285_15,BookRestaurant,BookRestaurant,1,8:14:served_dish,8:8:served_dish | 10:10:party_size_number | 11:11:sort | 12:12:served_dish,8:14:served_dish~vs~10:10:party_size_number | 8:14:served_dish~vs~11:11:sort,1,4,2
+test_285_9,BookRestaurant,BookRestaurant,1,8:17:served_dish,8:9:served_dish | 10:14:served_dish | 15:15:party_size_description | 16:17:served_dish,8:17:served_dish~vs~15:15:party_size_description,1,4,1
+test_428_1,PlayMusic,PlayMusic,1,1:3:album,1:1:sort | 2:2:album | 3:3:track,1:3:album~vs~1:1:sort | 1:3:album~vs~3:3:track,1,3,2
+test_285_1,BookRestaurant,BookRestaurant,1,8:13:served_dish,8:10:served_dish | 11:11:party_size_description | 12:13:served_dish,8:13:served_dish~vs~11:11:party_size_description,1,3,1
+test_285_6,BookRestaurant,BookRestaurant,1,8:14:served_dish,8:11:served_dish | 12:12:party_size_description | 13:14:served_dish,8:14:served_dish~vs~12:12:party_size_description,1,3,1
+test_285_11,BookRestaurant,BookRestaurant,1,8:14:served_dish,8:11:served_dish | 12:12:party_size_description | 13:14:served_dish,8:14:served_dish~vs~12:12:party_size_description,1,3,1
+test_285_14,BookRestaurant,BookRestaurant,1,8:15:served_dish,8:13:served_dish | 14:14:party_size_description | 15:15:served_dish,8:15:served_dish~vs~14:14:party_size_description,1,3,1
+test_434_1,BookRestaurant,BookRestaurant,1,4:5:restaurant_name,4:4:sort | 5:5:restaurant_type,4:5:restaurant_name~vs~4:4:sort | 4:5:restaurant_name~vs~5:5:restaurant_type,1,2,2
+test_476_3,BookRestaurant,BookRestaurant,1,5:7:restaurant_name,5:5:restaurant_type | 6:7:served_dish,5:7:restaurant_name~vs~5:5:restaurant_type | 5:7:restaurant_name~vs~6:7:served_dish,1,2,2
+test_462,PlayMusic,PlayMusic,1,3:5:playlist,4:5:genre | 7:7:datetime,3:5:playlist~vs~4:5:genre,1,2,1
+test_428_2,PlayMusic,PlayMusic,1,1:2:album,1:1:track | 2:2:album,1:2:album~vs~1:1:track,1,2,1
+test_497_2,SearchCreativeWork,SearchCreativeWork,1,1:2:object_type,1:1:object_name | 2:2:object_type,1:2:object_type~vs~1:1:object_name,1,2,1
+test_310_1,weather/find,weather/find,1,3:3:condition_temperature,2:2:condition_temperature | 3:3:weather/attribute,3:3:condition_temperature~vs~3:3:weather/attribute,1,2,1
+test_310_2,weather/find,weather/find,1,3:3:condition_temperature,2:2:condition_temperature | 3:3:weather/attribute,3:3:condition_temperature~vs~3:3:weather/attribute,1,2,1
+test_285_12,BookRestaurant,BookRestaurant,1,8:9:served_dish,8:8:cuisine | 9:9:served_dish,8:9:served_dish~vs~8:8:cuisine,1,2,1
+test_285_39,BookRestaurant,BookRestaurant,1,8:9:served_dish,8:8:cuisine | 9:9:served_dish,8:9:served_dish~vs~8:8:cuisine,1,2,1
+test_491,SearchCreativeWork,SearchCreativeWork,1,2:3:object_type,2:2:object_type | 3:3:object_type,,1,2,0
+test_487,SearchCreativeWork,SearchCreativeWork,1,3:4:object_type,3:3:object_type | 4:4:object_type,,1,2,0
+test_357,SearchCreativeWork,SearchCreativeWork,1,3:5:object_name,3:3:object_name | 4:5:object_name,,1,2,0
+test_365,BookRestaurant,BookRestaurant,1,6:8:party_size_description,6:6:party_size_description | 8:8:party_size_description,,1,2,0
+test_400,AddToPlaylist,AddToPlaylist,1,9:9:playlist,3:3:music_item | 8:9:playlist,,1,2,0
+test_194,reminder/cancel_reminder,reminder/cancel_reminder,1,1:2:reference,2:2:reference | 5:5:reference,,1,2,0
+test_497_1,SearchCreativeWork,SearchCreativeWork,1,1:2:object_type,1:1:object_type | 2:2:object_type,,1,2,0
+test_253_7,SearchCreativeWork,SearchCreativeWork,1,6:7:object_name,4:4:object_type | 7:8:object_name,,1,2,0
+test_253_18,SearchCreativeWork,SearchCreativeWork,1,6:8:object_name,4:4:object_type | 7:9:object_name,,1,2,0
+test_285_8,BookRestaurant,BookRestaurant,1,8:14:served_dish,8:11:served_dish | 13:14:served_dish,,1,2,0
+test_453_3,BookRestaurant,BookRestaurant,1,9:11:location,9:9:location | 10:11:location,,1,2,0
+test_478,SearchScreeningEvent,SearchScreeningEvent,1,4:6:location,4:6:movie_name,4:6:location~vs~4:6:movie_name,1,1,1
+test_476,BookRestaurant,BookRestaurant,1,5:5:restaurant_name,5:5:restaurant_type,5:5:restaurant_name~vs~5:5:restaurant_type,1,1,1
+test_443,SearchScreeningEvent,SearchScreeningEvent,1,4:4:location,4:4:movie_name,4:4:location~vs~4:4:movie_name,1,1,1
+test_441,BookRestaurant,BookRestaurant,1,10:11:restaurant_name,10:10:location,10:11:restaurant_name~vs~10:10:location,1,1,1
+test_440,RateBook,RateBook,1,2:2:object_part_of_series_type,2:2:object_type,2:2:object_part_of_series_type~vs~2:2:object_type,1,1,1
+test_434,BookRestaurant,BookRestaurant,1,4:6:restaurant_name,4:6:party_size_description,4:6:restaurant_name~vs~4:6:party_size_description,1,1,1
+test_433,RateBook,RateBook,1,2:2:object_part_of_series_type,2:2:object_type,2:2:object_part_of_series_type~vs~2:2:object_type,1,1,1
+test_259,weather/find,weather/find,1,2:2:condition_description,2:2:weather/attribute,2:2:condition_description~vs~2:2:weather/attribute,1,1,1
+test_311,BookRestaurant,BookRestaurant,1,10:10:location,10:10:facility,10:10:location~vs~10:10:facility,1,1,1
+test_372_1,weather/find,weather/find,1,4:4:location,4:4:weather/attribute,4:4:location~vs~4:4:weather/attribute,1,1,1
+test_388,AddToPlaylist,AddToPlaylist,1,2:2:artist,2:2:playlist,2:2:artist~vs~2:2:playlist,1,1,1
+test_404,BookRestaurant,BookRestaurant,1,6:6:restaurant_type,6:6:served_dish,6:6:restaurant_type~vs~6:6:served_dish,1,1,1
+test_410,RateBook,RateBook,1,3:3:object_name,3:3:rating_unit,3:3:object_name~vs~3:3:rating_unit,1,1,1
+test_415,AddToPlaylist,AddToPlaylist,1,1:1:artist,1:1:entity_name,1:1:artist~vs~1:1:entity_name,1,1,1
+test_221,alarm/set_alarm,alarm/set_alarm,1,3:7:recurring_datetime,3:7:datetime,3:7:recurring_datetime~vs~3:7:datetime,1,1,1
+test_259_1,weather/find,weather/find,1,2:2:condition_description,2:2:weather/attribute,2:2:condition_description~vs~2:2:weather/attribute,1,1,1
+test_476_1,BookRestaurant,BookRestaurant,1,5:5:restaurant_name,5:5:restaurant_type,5:5:restaurant_name~vs~5:5:restaurant_type,1,1,1
+test_415_1,AddToPlaylist,AddToPlaylist,1,1:1:artist,1:1:entity_name,1:1:artist~vs~1:1:entity_name,1,1,1
+test_415_2,AddToPlaylist,AddToPlaylist,1,1:1:artist,1:1:entity_name,1:1:artist~vs~1:1:entity_name,1,1,1
+test_476_2,BookRestaurant,BookRestaurant,1,5:5:restaurant_name,5:5:restaurant_type,5:5:restaurant_name~vs~5:5:restaurant_type,1,1,1
+test_286_5,RateBook,RateBook,1,1:1:object_part_of_series_type,1:1:object_name,1:1:object_part_of_series_type~vs~1:1:object_name,1,1,1
+test_274_1,BookRestaurant,BookRestaurant,1,5:7:party_size_description,7:7:served_dish,5:7:party_size_description~vs~7:7:served_dish,1,1,1
+test_259_3,weather/find,weather/find,1,2:2:condition_description,2:2:weather/attribute,2:2:condition_description~vs~2:2:weather/attribute,1,1,1
+test_404_1,BookRestaurant,BookRestaurant,1,6:6:restaurant_type,6:6:served_dish,6:6:restaurant_type~vs~6:6:served_dish,1,1,1
+test_456_1,BookRestaurant,BookRestaurant,1,4:4:location,4:4:restaurant_type,4:4:location~vs~4:4:restaurant_type,1,1,1
+test_415_3,AddToPlaylist,AddToPlaylist,1,1:1:artist,1:1:entity_name,1:1:artist~vs~1:1:entity_name,1,1,1
+test_434_2,BookRestaurant,BookRestaurant,1,4:4:restaurant_name,4:4:restaurant_type,4:4:restaurant_name~vs~4:4:restaurant_type,1,1,1
+test_434_3,BookRestaurant,BookRestaurant,1,4:4:restaurant_name,4:4:location,4:4:restaurant_name~vs~4:4:location,1,1,1
+test_498,BookRestaurant,BookRestaurant,1,11:14:datetime,12:14:datetime,,1,1,0
+test_483,SearchCreativeWork,SearchCreativeWork,1,4:7:object_name,3:6:object_name,,1,1,0
+test_473,RateBook,RateBook,1,6:6:best_rating,5:5:best_rating,,1,1,0
+test_456,BookRestaurant,BookRestaurant,1,4:4:location,3:3:served_dish,,1,1,0
+test_455,SearchCreativeWork,SearchCreativeWork,1,3:5:object_name,4:5:object_name,,1,1,0
+test_451,SearchCreativeWork,SearchCreativeWork,1,4:6:object_name,3:5:object_name,,1,1,0
+test_107,reminder/set_reminder,reminder/set_reminder,1,10:10:datetime,10:11:datetime,,1,1,0
+test_285,BookRestaurant,BookRestaurant,1,8:9:served_dish,8:10:served_dish,,1,1,0
+test_304,PlayMusic,PlayMusic,1,3:4:service,3:3:service,,1,1,0
+test_310,weather/find,weather/find,1,3:3:condition_temperature,2:3:condition_temperature,,1,1,0
+test_321,weather/find,weather/find,1,4:4:datetime,3:4:datetime,,1,1,0
+test_374_1,BookRestaurant,BookRestaurant,1,3:5:party_size_description,5:5:party_size_description,,1,1,0
+test_420,PlayMusic,PlayMusic,1,3:4:artist,4:4:artist,,1,1,0
+test_422,AddToPlaylist,AddToPlaylist,1,5:7:playlist,4:7:playlist,,1,1,0
+test_429,PlayMusic,PlayMusic,1,3:3:datetime,3:5:datetime,,1,1,0
+test_374_2,BookRestaurant,BookRestaurant,1,3:5:party_size_description,5:5:party_size_description,,1,1,0
+test_375,weather/find,weather/find,1,6:8:datetime,6:13:datetime,,1,1,0
+test_380,AddToPlaylist,AddToPlaylist,1,5:6:playlist,4:6:playlist,,1,1,0
+test_395,SearchScreeningEvent,SearchScreeningEvent,1,6:8:movie_name,5:7:movie_name,,1,1,0
+test_396,PlayMusic,PlayMusic,1,5:7:playlist,4:5:playlist,,1,1,0
+test_401,AddToPlaylist,AddToPlaylist,1,6:6:playlist,5:6:playlist,,1,1,0
+test_403,AddToPlaylist,AddToPlaylist,1,4:5:playlist,4:6:playlist,,1,1,0
+test_412,PlayMusic,PlayMusic,1,5:6:service,5:5:service,,1,1,0
+test_190,alarm/set_alarm,alarm/set_alarm,1,8:13:recurring_datetime,7:12:recurring_datetime,,1,1,0
+test_204,alarm/cancel_alarm,alarm/cancel_alarm,1,4:7:datetime,4:8:datetime,,1,1,0
+test_224,alarm/show_alarms,alarm/show_alarms,1,1:2:reference,1:1:reference,,1,1,0
+test_225,reminder/show_reminders,reminder/show_reminders,1,2:3:reference,2:2:reference,,1,1,0
+test_403_1,AddToPlaylist,AddToPlaylist,1,4:6:playlist,3:6:playlist,,1,1,0
+test_455_1,SearchCreativeWork,SearchCreativeWork,1,3:5:object_name,4:5:object_name,,1,1,0
+test_253_3,SearchCreativeWork,SearchCreativeWork,1,6:6:object_name,6:7:object_name,,1,1,0
+test_409_6,SearchCreativeWork,SearchCreativeWork,1,4:4:object_name,4:6:object_name,,1,1,0
+test_253_5,SearchCreativeWork,SearchCreativeWork,1,6:7:object_name,6:10:object_name,,1,1,0
+test_409_12,SearchCreativeWork,SearchCreativeWork,1,4:4:object_name,4:5:object_name,,1,1,0
+test_409_21,SearchCreativeWork,SearchCreativeWork,1,4:6:object_name,4:7:object_name,,1,1,0
+test_409_22,SearchCreativeWork,SearchCreativeWork,1,4:6:object_name,4:7:object_name,,1,1,0
+test_455_2,SearchCreativeWork,SearchCreativeWork,1,3:4:object_name,3:5:object_name,,1,1,0
+test_291_5,SearchScreeningEvent,SearchScreeningEvent,1,3:5:movie_name,5:5:movie_name,,1,1,0
+test_321_1,weather/find,weather/find,1,4:4:datetime,3:4:datetime,,1,1,0
+test_321_2,weather/find,weather/find,1,4:4:datetime,3:4:datetime,,1,1,0
+test_273_2,weather/find,weather/find,1,5:5:datetime,5:12:datetime,,1,1,0
+test_285_31,BookRestaurant,BookRestaurant,1,8:10:served_dish,8:11:served_dish,,1,1,0
+test_285_34,BookRestaurant,BookRestaurant,1,8:12:served_dish,8:13:served_dish,,1,1,0
+test_285_40,BookRestaurant,BookRestaurant,1,8:9:served_dish,8:10:served_dish,,1,1,0
+test_380_1,AddToPlaylist,AddToPlaylist,1,5:6:playlist,4:6:playlist,,1,1,0
+test_103,alarm/cancel_alarm,alarm/cancel_alarm,1,1:1:reference,,,1,0,0
+test_105,reminder/cancel_reminder,reminder/cancel_reminder,1,1:1:reference,,,1,0,0
+test_301,PlayMusic,PlayMusic,1,1:2:track,,,1,0,0
+test_173,alarm/cancel_alarm,alarm/cancel_alarm,1,1:1:reference,,,1,0,0
+test_223,weather/find,weather/find,1,1:1:weather/attribute,,,1,0,0
+test_489_1,PlayMusic,PlayMusic,1,3:3:music_item,,,1,0,0
+test_489_2,PlayMusic,PlayMusic,1,3:3:music_item,,,1,0,0
+test_408_4,weather/find,weather/find,1,6:6:location,,,1,0,0
+test_259_4,weather/find,weather/find,1,2:2:condition_description,,,1,0,0
+test_469,RateBook,RateBook,1,,5:5:rating_unit,,0,1,0
+test_288,SearchScreeningEvent,SearchScreeningEvent,1,,1:1:object_type,,0,1,0
+test_330,RateBook,RateBook,1,,2:2:rating_unit,,0,1,0
+test_425,RateBook,RateBook,1,,4:4:rating_unit,,0,1,0
+test_427,RateBook,RateBook,1,,4:4:rating_unit,,0,1,0
+test_285_5,BookRestaurant,BookRestaurant,1,,12:12:facility,,0,1,0
+test_400_1,AddToPlaylist,AddToPlaylist,1,,3:3:music_item,,0,1,0
+test_403_2,AddToPlaylist,AddToPlaylist,1,,3:3:playlist,,0,1,0
