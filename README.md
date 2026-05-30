@@ -57,9 +57,3 @@ python run_metrics.py --gold gold.conll --pred pred.conll --model my_model --out
 | Joint | Среднее Intent F1 и Slot/Span F1 |
 
 Выход: `comparison_<model>.csv`, `metrics_summary.csv`.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
