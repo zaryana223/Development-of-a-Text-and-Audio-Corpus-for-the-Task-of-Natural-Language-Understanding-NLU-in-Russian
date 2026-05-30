@@ -44,6 +44,13 @@ python run_metrics.py --gold gold.conll --pred pred.conll --model my_model --out
 
 Подробное описание листов: [docs/DATA_AND_ERRORS.md](docs/DATA_AND_ERRORS.md).
 
+### Генеративные LLM: zero-shot и few-shot
+
+| Файл | Назначение |
+|------|------------|
+| [`zero_shot+few_shot_version.ipynb`](zero_shot+few_shot_version.ipynb) | Оценка instruction-tuned LLM на `ru.test.conll` (JSON intent + slots) |
+| [docs/ZERO_SHOT_FEW_SHOT.md](docs/ZERO_SHOT_FEW_SHOT.md) | **Таблицы:** режимы, модели, конфигурации few-shot, метрики, выходные файлы |
+
 ---
 
 ## Метрики (код)
