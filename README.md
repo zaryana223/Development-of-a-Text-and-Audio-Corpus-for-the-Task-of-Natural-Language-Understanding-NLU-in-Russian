@@ -4,7 +4,7 @@
 
 Выпускная квалификационная работа, НИУ ВШЭ, 2026 — **Дамашова Заряна Алексеевна**
 
-Репозиторий: подготовка **обучающих данных** (перевод, адаптация), **код метрик NLU**, **таблицы ошибок** из экспериментов ВКР.
+Репозиторий: подготовка **обучающих данных** (перевод, адаптация), **код метрик NLU**, **таблицы метрик и ошибок** из экспериментов ВКР.
 
 Связанные репозитории: [XSID-ru-NLP](https://github.com/zaryana223/XSID-ru-NLP) (бенчмарк), [NLU](https://github.com/zaryana223/NLU) (MaChAmp, обучение).
 
@@ -34,32 +34,29 @@ pip install -r requirements.txt
 python run_metrics.py --gold gold.conll --pred pred.conll --model my_model --output-dir results
 ```
 
-Подробнее: раздел **Метрики** ниже и [docs/DATA_AND_ERRORS.md](docs/DATA_AND_ERRORS.md).
+### Таблицы из экспериментов (`data/errors/`)
 
-### Ошибки моделей (`data/errors/`)
+| Файл | Назначение |
+|------|------------|
+| `метрики_на_валид_данных.xlsx` | Метрики на validation (6 энкодеров, pivot, татарский) |
+| `ERRORS_mdeberta_trans_trans_RU_best_val.xlsx` | Ошибки mDeBERTa на trans val |
+| `generative_error_analysis_tables.xlsx` | Метрики и ошибки генеративных LLM |
 
-Excel и CSV с разбором ошибок (mDeBERTa, mmBERT, генеративные LLM, GigaAM).  
-**Что в каждом файле и как читать** — [docs/DATA_AND_ERRORS.md](docs/DATA_AND_ERRORS.md).
+Подробное описание листов: [docs/DATA_AND_ERRORS.md](docs/DATA_AND_ERRORS.md).
 
 ---
 
-## Метрики
+## Метрики (код)
 
 | Метрика | Описание |
 |---------|----------|
 | Intent Accuracy | Доля верных интентов |
 | Intent F1 (weighted) | F1 по классам интентов |
 | Span F1 | Span-level F1 (seqeval, BIO) |
-| Slot F1 (/N) | Для имён с `gigaam`: среднее F1 по всем 500 репликам |
-| Joint | Среднее Intent F1 и Slot/Span F1 (см. README в коде) |
+| Slot F1 (/N) | Для имён с `gigaam`: среднее F1 по всем репликам |
+| Joint | Среднее Intent F1 и Slot/Span F1 |
 
-Выход: `comparison_<model>.csv`, `metrics_summary.csv`, опционально `per_slot_<model>.csv`.
-
----
-
-## English
-
-Russian NLU corpus resources (xSID-based): data prep notebooks, **metric evaluation code**, and **error analysis spreadsheets** from the HSE thesis (intent/slot filling, encoders, LLMs, GigaAM ASR→NLU). See [docs/DATA_AND_ERRORS.md](docs/DATA_AND_ERRORS.md).
+Выход: `comparison_<model>.csv`, `metrics_summary.csv`.
 
 ---
 
